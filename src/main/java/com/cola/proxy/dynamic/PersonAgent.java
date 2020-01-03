@@ -42,6 +42,7 @@ public class PersonAgent implements InvocationHandler {
     }
 
     //执行方法
+    @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         dosomethingBefore();
         //调用真实对象的方法执行
